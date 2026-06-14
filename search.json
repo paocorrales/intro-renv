@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Sobre este taller",
-    "section": "",
-    "text": "Los materiales de este taller derivan de An R reproducibility toolkit for the practical researcher desarollado por Pao Corrales y Elio Campitelli. Estos materiales mantienen la misma licencia CC-SA 4.0.\nL"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Proyectos reproducibles con renv",
@@ -40,5 +33,12 @@
     "title": "Proyectos reproducibles con renv",
     "section": "Recursos",
     "text": "Recursos\nDocumentación del paquete renv:\n\nCómo empezar\nPreguntas frecuentes"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre este taller",
+    "section": "",
+    "text": "Los materiales de este taller derivan de An R reproducibility toolkit for the practical researcher desarollado por Pao Corrales y Elio Campitelli. Estos materiales mantienen la misma licencia CC-SA 4.0.\nL"
   }
 ]
