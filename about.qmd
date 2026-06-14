@@ -1,0 +1,8 @@
+---
+title: "Sobre este taller"
+---
+
+Los materiales de este taller derivan de [An R reproducibility toolkit for the practical researcher](https://reproducibility.rocks/) desarollado por [Pao Corrales](https://paocorrales.github.io/) y [Elio Campitelli](https://eliocamp.github.io/). 
+Estos materiales mantienen la misma licencia CC-SA 4.0. 
+
+L

@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "Proyectos reproducibles con renv"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Intro a renv
+      - about.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+      - styles.scss
+    toc: true
+
+
+

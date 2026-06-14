@@ -1,0 +1,45 @@
+/* css styles */
+
+/*-- scss:defaults --*/
+
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: "Source Sans 3", system-ui, -apple-system, sans-serif;
+$headings-font-family: "Inter", sans-serif;
+
+
+$primary: #6e3667; // deep green
+$secondary: #88d317;   // lighter green
+$gray: #58595B;
+
+$navbar-bg: $primary;
+$navbar-fg: $secondary;
+
+.navbar-title {
+  font-weight: 800;
+}
+
+$body-bg: #FDFFFC;     // very light grey-green
+$body-color: #2f3e2f;  // dark muted green-grey
+
+// Links
+$link-color: $primary;
+$link-hover-color: $secondary;
+
+h1.title, h2.anchored {
+  //text-transform: uppercase;
+  font-weight: 700;
+  color: $primary;
+}
+
+
+$callout-color-tip: $primary;
+$callout-color-note: $secondary;
+
+pre > code {
+  border-radius: 5px;
+  border-left-color: $gray;
+  background-color: #e9ecefa6 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
