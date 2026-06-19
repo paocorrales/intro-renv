@@ -47,13 +47,13 @@ Esta función escaneará automáticamente todos tus scripts de R y archivos RMar
 
 ## Ejercicio
 
-Empieza a usar renv
+Empesá a usar renv
 
-1. Crea un nuevo proyecto y añade un nuevo documento Quarto (puedes guardarlo como `analisis.qmd`).
+1. Creá un nuevo proyecto y añade un nuevo documento Quarto (puedes guardarlo como `analisis.qmd`).
 
 2. En la consola, ejecuta `renv::init()`.
 
-3. Ejecuta `renv::status()`.
+3. Ejecutá `renv::status()`.
 
 :::
 
@@ -77,9 +77,9 @@ La otra cara de la moneda es que actualizar paquetes fuera del proyecto no afect
 
 Usa ggplot2
 
-1. . Añade un nuevo bloque de código que cargue ggplot2 con `library(ggplot2)` en `analisis.qmd`.
+1. . Añadí un nuevo bloque de código que cargue ggplot2 con `library(ggplot2)` en `analisis.qmd`.
 
-2. Intenta renderizar el archivo.
+2. Intentá renderizar el archivo.
 
 :::
 
@@ -106,11 +106,11 @@ En este caso, se está utilizando ggplot2 (cuando agregamos `library(ggplot2)`),
 
 Instalá ggplot2
 
-1. Instaáa ggplot2 con el comando `install.packages("ggplot2")`en la consola.
+1. Instalá ggplot2 con el comando `install.packages("ggplot2")`en la consola.
 
 2. Renderizá el archivo`analisis.qmd`.
 
-3. Ejecuta `renv::status()` en la consola.
+3. Ejecutá `renv::status()` en la consola.
 
 :::
 
@@ -159,12 +159,16 @@ No es recomendable editar el archivo `renv.lock` a mano ya que hay riesgo de rom
 Actualiza el archivo `renv.lock`
 
 
+2. Ejecutá `renv::snapshot()` en la consola.
 
-2. Ejecuta `renv::snapshot()` en la consola.
+3. Verás una lista de paquetes y el texto 
 
-3. Verás una lista de paquetes y el texto ¿Quieres continuar? [S/N]: . Escribe s y pulsa Intro.
+```¿Quieres continuar? [Y/N]: 
+``` 
 
-4. Ejecuta `renv::status()` en la consola.
+Escribe y, luego apretá enter.
+
+4. Ejecutá `renv::status()` en la consola.
 
 :::
 
@@ -176,7 +180,7 @@ No issues found -- the project is in a consistent state.
 
 Estas tres funciones (`renv::init()`,`renv::snapshot()`y`renv::status()`) son suficientes para trabajar localmente en un entorno controlado y con un archivo `renv.lock` actualizado.
 
-## renv para la reproducibilidad:
+## renv para la reproducibilidad
 
 Todo este trabajo no serviría de nada si no hubiera una forma de usar el archivo `renv.lock` para recrear el mismo entorno de forma consistente.
 Aquí es donde renv se destaca.
@@ -189,17 +193,17 @@ Esto además tiene la ventaja de que no afectará la biblioteca global, por lo q
 
 ## Ejercicio
 
-Restaurar un entorno
+Restaurar un entorno de trabajo
 
-1. Descarga este [proyecto reproducible](/reproducible_project.zip).
+1. Descargá este [proyecto reproducible](/reproducible_project.zip).
 
-3. Abre el proyecto y ejecuta`renv::status()`en la consola de R. ¿Cuál es el estado de los paquetes?
+3. Abrí el proyecto y ejecuta`renv::status()`en la consola de R. ¿Cuál es el estado de los paquetes?
 
-4. Ejecuta`renv::restore()`en la consola de R y continúa.
+4. Ejecutá`renv::restore()`en la consola de R y continúa.
 
-5. Ejecutade nuevo`renv::status()`para comprobar que el proyecto está en un estado coherente.
+5. Ejecutá de nuevo`renv::status()`para comprobar que el proyecto está en un estado coherente.
 
-6. Genera`analisis/reporte.Rmd`para asegurarte de que ha funcionado.
+6. Generá `analisis/reporte.Rmd`para asegurarte de que ha funcionado.
 
 :::
 
