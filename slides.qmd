@@ -1,0 +1,80 @@
+---
+title: "Proyectos reproducibles con renv"
+author: "Pao Corrales"
+title-slide-attributes:
+  data-background-color: "#6e3667"
+  
+format: 
+  revealjs:
+    theme: 
+      - default
+      - styles.scss
+    self-contained: true
+    fontsize: "18.5pt"
+---
+
+# renv
+
+## ✏️ Empesá a usar renv
+
+1. Crea un nuevo proyecto y añade un nuevo documento Quarto (puedes guardarlo como `analisis.qmd`).
+
+2. En la consola, ejecutá `renv::init()`.
+
+3. Ejecutá `renv::status()`.
+
+## ✏️ Usa ggplot2
+
+1. . Añadí un nuevo bloque de código que cargue ggplot2 con `library(ggplot2)` en `analisis.qmd`.
+
+2. Intenta renderizar el archivo.
+
+
+## ✏️ Instalá ggplot2
+
+1. Instaá ggplot2 con el comando `install.packages("ggplot2")`en la consola.
+
+2. Renderizá el archivo`analisis.qmd`.
+
+3. Ejecutá `renv::status()` en la consola.
+
+
+
+## ✏️ Actualiza el archivo `renv.lock`
+
+
+2. Ejecuta `renv::snapshot()` en la consola.
+
+3. Verás una lista de paquetes y el texto 
+
+```¿Quieres continuar? [Y/N]: 
+``` 
+
+Escribe y, luego apretá enter.
+
+4. Ejecuta `renv::status()` en la consola.
+
+
+## ✏️ Restaurar un entorno de trabajo
+
+1. Descargá este [proyecto reproducible](/reproducible_project.zip).
+
+3. Abrí el proyecto y ejecuta`renv::status()`en la consola de R. ¿Cuál es el estado de los paquetes?
+
+4. Ejecuta`renv::restore()`en la consola de R y continúa.
+
+5. Ejecutá de nuevo`renv::status()`para comprobar que el proyecto está en un estado coherente.
+
+6. Generá `analisis/reporte.Rmd`para asegurarte de que ha funcionado.
+
+## Tips {background-color="#6e3667"}
+
+::: {.incremental}
+
+* El archivo `renv.lock`
+* Detección de dependencias
+* Instalación de paquetes
+* Dependencias del sistema
+
+:::
+

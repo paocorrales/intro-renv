@@ -8,6 +8,8 @@ website:
       - href: index.qmd
         text: Intro a renv
       - about.qmd
+      - href: slides.qmd
+        text: Presentación
 
 format:
   html:

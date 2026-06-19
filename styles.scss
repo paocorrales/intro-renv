@@ -1,11 +1,11 @@
 /* css styles */
 
 /*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*-- scss:defaults --*/
-
-$font-family-sans-serif: "Source Sans 3", system-ui, -apple-system, sans-serif;
-$headings-font-family: "Inter", sans-serif;
+$font-family-sans-serif: "Montserrat", sans-serif !default;
+$headings-font-family: "Lato", sans-serif !default;
 
 
 $primary: #6e3667; // deep green
@@ -42,4 +42,34 @@ pre > code {
   background-color: #e9ecefa6 !important;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+
+$presentation-font-size-root: 35px;
+
+// headings
+$presentation-heading-font: "Lato" !default;
+$presentation-heading-color: $primary;
+
+.reveal .has-dark-background h1,
+.reveal .has-dark-background h2,
+.reveal .has-dark-background .title {
+  color: $secondary !important;
+}
+
+.reveal code {
+  border-radius: 5px;
+  border-left-color: $gray;
+  background-color: #e9ecefa6 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.reveal .has-dark-background code {
+  border-radius: 5px;
+  border-left-color: $gray;
+  background-color: #e9ecef40 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $secondary;
 }
