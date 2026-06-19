@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c3aeeec2550ddbe7b0457b118d15ec79.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-181f7654ae8839475223847e91cd8d57.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -99,6 +99,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">Sobre este taller</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./slides.html"> 
+<span class="menu-text">Presentación</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -116,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#usar-renv-en-tu-proyecto" id="toc-usar-renv-en-tu-proyecto" class="nav-link active" data-scroll-target="#usar-renv-en-tu-proyecto">Usar renv en tu proyecto</a></li>
-  <li><a href="#renv-para-la-reproducibilidad" id="toc-renv-para-la-reproducibilidad" class="nav-link" data-scroll-target="#renv-para-la-reproducibilidad">renv para la reproducibilidad:</a></li>
+  <li><a href="#renv-para-la-reproducibilidad" id="toc-renv-para-la-reproducibilidad" class="nav-link" data-scroll-target="#renv-para-la-reproducibilidad">renv para la reproducibilidad</a></li>
   <li><a href="#consejos-extras" id="toc-consejos-extras" class="nav-link" data-scroll-target="#consejos-extras">Consejos extras</a>
   <ul class="collapse">
   <li><a href="#el-archivo-renv.lock" id="toc-el-archivo-renv.lock" class="nav-link" data-scroll-target="#el-archivo-renv.lock">El archivo <code>renv.lock</code></a></li>
@@ -187,11 +191,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Empieza a usar renv</p>
+<p>Empesá a usar renv</p>
 <ol type="1">
-<li><p>Crea un nuevo proyecto y añade un nuevo documento Quarto (puedes guardarlo como <code>analisis.qmd</code>).</p></li>
+<li><p>Creá un nuevo proyecto y añade un nuevo documento Quarto (puedes guardarlo como <code>analisis.qmd</code>).</p></li>
 <li><p>En la consola, ejecuta <code>renv::init()</code>.</p></li>
-<li><p>Ejecuta <code>renv::status()</code>.</p></li>
+<li><p>Ejecutá <code>renv::status()</code>.</p></li>
 </ol>
 </div>
 </div>
@@ -211,8 +215,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="callout-body-container callout-body">
 <p>Usa ggplot2</p>
 <ol type="1">
-<li><p>. Añade un nuevo bloque de código que cargue ggplot2 con <code>library(ggplot2)</code> en <code>analisis.qmd</code>.</p></li>
-<li><p>Intenta renderizar el archivo.</p></li>
+<li><p>. Añadí un nuevo bloque de código que cargue ggplot2 con <code>library(ggplot2)</code> en <code>analisis.qmd</code>.</p></li>
+<li><p>Intentá renderizar el archivo.</p></li>
 </ol>
 </div>
 </div>
@@ -236,9 +240,9 @@ See `?renv::status` for advice on resolving these issues.</code></pre>
 <div class="callout-body-container callout-body">
 <p>Instalá ggplot2</p>
 <ol type="1">
-<li><p>Instaáa ggplot2 con el comando <code>install.packages("ggplot2")</code>en la consola.</p></li>
+<li><p>Instalá ggplot2 con el comando <code>install.packages("ggplot2")</code>en la consola.</p></li>
 <li><p>Renderizá el archivo<code>analisis.qmd</code>.</p></li>
-<li><p>Ejecuta <code>renv::status()</code> en la consola.</p></li>
+<li><p>Ejecutá <code>renv::status()</code> en la consola.</p></li>
 </ol>
 </div>
 </div>
@@ -282,9 +286,13 @@ See ?renv::status() for advice on resolving these issues.</code></pre>
 <div class="callout-body-container callout-body">
 <p>Actualiza el archivo <code>renv.lock</code></p>
 <ol start="2" type="1">
-<li><p>Ejecuta <code>renv::snapshot()</code> en la consola.</p></li>
-<li><p>Verás una lista de paquetes y el texto ¿Quieres continuar? [S/N]: . Escribe s y pulsa Intro.</p></li>
-<li><p>Ejecuta <code>renv::status()</code> en la consola.</p></li>
+<li><p>Ejecutá <code>renv::snapshot()</code> en la consola.</p></li>
+<li><p>Verás una lista de paquetes y el texto</p></li>
+</ol>
+<p><code>¿Quieres continuar? [Y/N]:</code></p>
+<p>Escribe y, luego apretá enter.</p>
+<ol start="4" type="1">
+<li>Ejecutá <code>renv::status()</code> en la consola.</li>
 </ol>
 </div>
 </div>
@@ -293,7 +301,7 @@ See ?renv::status() for advice on resolving these issues.</code></pre>
 <p>Estas tres funciones (<code>renv::init()</code>,<code>renv::snapshot()</code>y<code>renv::status()</code>) son suficientes para trabajar localmente en un entorno controlado y con un archivo <code>renv.lock</code> actualizado.</p>
 </section>
 <section id="renv-para-la-reproducibilidad" class="level2">
-<h2 class="anchored" data-anchor-id="renv-para-la-reproducibilidad">renv para la reproducibilidad:</h2>
+<h2 class="anchored" data-anchor-id="renv-para-la-reproducibilidad">renv para la reproducibilidad</h2>
 <p>Todo este trabajo no serviría de nada si no hubiera una forma de usar el archivo <code>renv.lock</code> para recrear el mismo entorno de forma consistente. Aquí es donde renv se destaca.</p>
 <p>Cualquiera que quiera instalar los mismos paquetes que vos usas en tu proyecto con sus versiones exactas puede descargar tu código, abrir el proyecto y usar<code>renv::restore()</code>. Esto instalará todos los paquetes necesario en la biblioteca del proyecto local para que puedan correr el código sin errores. Esto además tiene la ventaja de que no afectará la biblioteca global, por lo que otros proyectos o código seguirán funcionando sin problemas.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
@@ -306,13 +314,13 @@ See ?renv::status() for advice on resolving these issues.</code></pre>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Restaurar un entorno</p>
+<p>Restaurar un entorno de trabajo</p>
 <ol type="1">
-<li><p>Descarga este <a href="./reproducible_project.zip">proyecto reproducible</a>.</p></li>
-<li><p>Abre el proyecto y ejecuta<code>renv::status()</code>en la consola de R. ¿Cuál es el estado de los paquetes?</p></li>
-<li><p>Ejecuta<code>renv::restore()</code>en la consola de R y continúa.</p></li>
-<li><p>Ejecutade nuevo<code>renv::status()</code>para comprobar que el proyecto está en un estado coherente.</p></li>
-<li><p>Genera<code>analisis/reporte.Rmd</code>para asegurarte de que ha funcionado.</p></li>
+<li><p>Descargá este <a href="./reproducible_project.zip">proyecto reproducible</a>.</p></li>
+<li><p>Abrí el proyecto y ejecuta<code>renv::status()</code>en la consola de R. ¿Cuál es el estado de los paquetes?</p></li>
+<li><p>Ejecutá<code>renv::restore()</code>en la consola de R y continúa.</p></li>
+<li><p>Ejecutá de nuevo<code>renv::status()</code>para comprobar que el proyecto está en un estado coherente.</p></li>
+<li><p>Generá <code>analisis/reporte.Rmd</code>para asegurarte de que ha funcionado.</p></li>
 </ol>
 </div>
 </div>
