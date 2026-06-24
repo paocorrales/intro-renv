@@ -195,7 +195,7 @@ Esto además tiene la ventaja de que no afectará la biblioteca global, por lo q
 
 Restaurar un entorno de trabajo
 
-1. Descargá este [proyecto reproducible](/proyecto_reproducible.zip).
+1. Descargá este [proyecto reproducible](/static/proyecto_reproducible.zip).
 
 3. Abrí el proyecto y ejecuta`renv::status()`en la consola de R. ¿Cuál es el estado de los paquetes?
 
