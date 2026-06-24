@@ -15,7 +15,12 @@ format:
 
 # renv
 
-## ✏️ Empesá a usar renv
+## Flujo de trabajo con renv 
+
+![](static/diagrama_renv.png)
+
+
+## ✏️ Empezá a usar renv
 
 1. Crea un nuevo proyecto y añade un nuevo documento Quarto (puedes guardarlo como `analisis.qmd`).
 
@@ -32,7 +37,7 @@ format:
 
 ## ✏️ Instalá ggplot2
 
-1. Instaá ggplot2 con el comando `install.packages("ggplot2")`en la consola.
+1. Instalá ggplot2 con el comando `install.packages("ggplot2")`en la consola.
 
 2. Renderizá el archivo`analisis.qmd`.
 
@@ -43,7 +48,7 @@ format:
 ## ✏️ Actualiza el archivo `renv.lock`
 
 
-2. Ejecuta `renv::snapshot()` en la consola.
+2. Ejecutá `renv::snapshot()` en la consola.
 
 3. Verás una lista de paquetes y el texto 
 
@@ -57,7 +62,7 @@ Escribe y, luego apretá enter.
 
 ## ✏️ Restaurar un entorno de trabajo
 
-1. Descargá este [proyecto reproducible](/reproducible_project.zip).
+1. Descargá este [proyecto reproducible](/static/proyecto_reproducible.zip).
 
 3. Abrí el proyecto y ejecuta`renv::status()`en la consola de R. ¿Cuál es el estado de los paquetes?
 
@@ -77,4 +82,21 @@ Escribe y, luego apretá enter.
 * Dependencias del sistema
 
 :::
+
+## Gracias! {background-color="#6e3667"}
+
+::: {.incremental}
+
+* El material de este taller vive en [paocorrales.github.io/intro-renv/](https://paocorrales.github.io/intro-renv/)
+
+  * Licencia CC-BY-SA (usalo como quieras pero siempre con la misma licencia!)
+  * Y contame :)
+  * Mi mail: paola.corrales@anu.edu
+
+* Otros recursos: [Documentación del paquete renv](https://rstudio.github.io/renv/index.html)
+  * [Cómo empezar](https://rstudio.github.io/renv/articles/renv.html)
+  * [Preguntas frecuentes](https://rstudio.github.io/renv/articles/faq.html)
+:::
+
+
 
