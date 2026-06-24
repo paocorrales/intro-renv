@@ -180,6 +180,8 @@ No issues found -- the project is in a consistent state.
 
 Estas tres funciones (`renv::init()`,`renv::snapshot()`y`renv::status()`) son suficientes para trabajar localmente en un entorno controlado y con un archivo `renv.lock` actualizado.
 
+![Flujo de trabajo con renv](static/diagrama_renv.png)
+
 ## renv para la reproducibilidad
 
 Todo este trabajo no serviría de nada si no hubiera una forma de usar el archivo `renv.lock` para recrear el mismo entorno de forma consistente.
